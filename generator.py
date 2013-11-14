@@ -31,9 +31,22 @@ class Post(object):
         self.__dict__.update(yaml.load(content))
 
 
+@app.template_filter('date')
+def format_date(value, format='%B %d, %Y'):
+    return value.strftime(format)
+
+
+
+### first way getting code into project
+#@app.context_processor
+#def inject_formate_date():
+#    return {'format_date': format_date}
+
+
 @app.route('/')
 def index():
-    return "Hello World"
+    posts = [Post('post/hello.md')]
+    return render_template('index.html', posts=posts)
 
 @app.route('/blog/<path:path>')
 def post(path):
