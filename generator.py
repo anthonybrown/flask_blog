@@ -50,10 +50,10 @@ def index():
 
 @app.route('/blog/<path:path>')
 def post(path):
-    #import ipdb; ipdb.set_trace()
+    #import ipdb; ipdb.set_trace() # to work with the repl
     path = os.path.join('posts', path + POSTS_FILE_EXTENSION)
     post = Post(path)
-    return render_template('post.html', post=post)
+    return render_template('post.html', post=post, format_date=format_date)
 
 
 if __name__ == '__main__':
