@@ -8,11 +8,11 @@
   <div id='posts'>
     {% for post in posts %}
         <div class='post'>
-             
+          <span class="post-date">{{ post.date|date }}</span>
+          <a class="post-title" href="{{ post.url }}">
+            {{ post.title }}{% if post.subtitle %}: {{ post.subtitle }}{% endif %}
+          </a>
         </div>
-    {% enfor %}
+    {% endfor %}
   </div>
-
-
-  {% endblock content %}
-
+{% endblock content %}
