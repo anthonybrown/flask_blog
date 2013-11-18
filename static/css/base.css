@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400);
+body {
+    padding: 50px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-family:'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #444;
+  }
+
+#container { margin: 50px auto 10px auto; }
+
+#header h3#date { color: #73C7F7; }
+
+h1 {
+    font-family:'Quicksand', sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.075em;
+}
+
+h2, h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  color: #555;
+}
+
+h1 { font-size: 40px; }
+
+/*a {
+    text-decoration: none;
+    color: #FF3366;
+    padding-bottom: 2px;
+}
+
+a:hover {
+    color: #FFF;
+    background-color: dodgerblue;
+}*/
+  #posts span.post-date {
+    text-align: left;
+  }
