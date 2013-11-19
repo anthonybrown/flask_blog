@@ -69,18 +69,6 @@
           transform: translate3d(0px, 105%, 0px)rotateX(-90deg);
         }
 
-
-
-/*#posts  a:hover {
-    color: #F00;
-    background-color: dodgerblue;
-    -webkit-transform: translate3d( 0px, 0px, -30px ) rotateX(90deg);
-    -moz-transform: translate3d( 0px, 0px, -30px ) rotateX(90deg);
-    -ms-transform: translate3d( 0px, 0px, -30px ) rotateX(90deg);
-    transform: translate3d( 0px, 0px, -30px ) rotateX(90deg);
-}
-*/
-
 #posts .post-date {
     width: 12em;
     font-size: 0.8em;
