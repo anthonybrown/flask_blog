@@ -8,7 +8,7 @@ h3#date {
     margin-top: 0;
     font-weight: normal;
     color: #999999;
-    font-size: 1em;
+    font-size: 0.7em;
 }
 
 #content {
@@ -20,16 +20,21 @@ h3#date {
     text-align: left;
 }
   #content > h1 {
-    color: #999;
+    color: #BBB;
   }
 
 #content p {
     margin-top: 0.5em;
     line-height: 1.5em;
 }
+  #content img {
+    max-width: 100%;
+  }
 
 .post {
-  width: 520px;
-  min-width: 500px;
+  width: 50%;
+  min-width: 420px;
+  max-width: 500px;
   margin: 0 auto;
+  text-align: right;
 }

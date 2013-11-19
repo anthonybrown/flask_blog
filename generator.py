@@ -130,4 +130,5 @@ def post(path):
 
 
 if __name__ == '__main__':
-    app.run(port=8000, debug=True)
+    post_files = [post.filepath for post in blog.posts]
+    app.run(port=8000, debug=True, extra_files=post_files)

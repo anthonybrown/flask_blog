@@ -7,6 +7,8 @@ date: 2013-11-13
 
  Flask is a micro web framework built with python.
 
+ ![Flask logo](/static/images/logo-full.png)
+
  So far so good, [flask](http://flask.pocoo.org/docs/) is amazing!
  the documentation is pretty good, and python in general has a wealth
  of online documentation.
