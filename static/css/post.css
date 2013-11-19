@@ -21,6 +21,8 @@ h3#date {
 }
   #content > h1 {
     color: #BBB;
+    font-size: 2.7rem;
+    text-align: center;
   }
 
 #content p {

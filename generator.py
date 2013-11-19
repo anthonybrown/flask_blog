@@ -1,17 +1,17 @@
 #!/usr/bin/python2.7.3
 
 import os
+import sys
 import collections
 
 from flask import Flask, render_template, url_for, abort, request
+from flask.ext.frozen import Freezer
 from werkzeug import cached_property
 from werkzeug.contrib.atom import AtomFeed
 import markdown
 import yaml
 
 POSTS_FILE_EXTENSION = '.md'
-
-#ext = ['.md', '.html', '.js']
 
 
 class SortedDict(collections.MutableMapping):
@@ -61,7 +61,10 @@ class Blog(object):
 
     @property
     def posts(self):
-        return self._cache.values()
+        if self._app.debug:
+            return self._cache.values()
+        else:
+            return [post for post in self._cache.values() if post.published]
 
     def get_post_or_404(self, path):
         """returns the Post object for the given path or raises a 404"""
@@ -88,6 +91,7 @@ class Post(object):
     def __init__(self, path, root_dir=''):
         self.urlpath  = os.path.splitext(path.strip('/'))[0]
         self.filepath = os.path.join(root_dir, path.strip('/'))
+        self.published = False
         self._initialize_metadata()
 
     @cached_property
@@ -110,8 +114,10 @@ class Post(object):
         self.__dict__.update(yaml.load(content))
 
 
-app  = Flask(__name__)
-blog = Blog(app, root_dir='posts')
+app     = Flask(__name__)
+#app.config.from_object(__name__)
+blog    = Blog(app, root_dir='posts')
+freezer = Freezer(app)
 
 # template filter decorator provided by Flask
 @app.template_filter('date')
@@ -123,7 +129,7 @@ def format_date(value, format='%B %d, %Y'):
 def index():
     return render_template('index.html', posts=blog.posts)
 
-@app.route('/blog/<path:path>')
+@app.route('/blog/<path:path>/')
 def post(path):
     #import ipdb; ipdb.set_trace()
     post = blog.get_post_or_404(path)
@@ -149,5 +155,9 @@ def feed():
 
 
 if __name__ == '__main__':
-    post_files = [post.filepath for post in blog.posts]
-    app.run(port=8000, debug=True, extra_files=post_files)
+    if len(sys.argv) > 1 and sys.argv[1] == 'build':
+        freezer.freeze()
+    else:
+        post_files = [post.filepath for post in blog.posts]
+        app.run(port=8000, debug=True, extra_files=post_files)
+

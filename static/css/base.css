@@ -138,9 +138,14 @@ body {
 /* =============================================================================
 Globals
 ========================================================================== */
-#container { margin: 50px auto 10px auto; }
+#container {
+  margin: 50px auto 10px auto;
+}
 
-#header h3#date { color: #FFAD80; }
+#header h3#date {
+  color: #FFF;
+  text-shadow: -2px -1px 1px #FFAD80, 2px -1px 2px #FFAD80, 1px 2px 2px #FFAD80, -2px 2px 1px #FFAD80;
+}
 
 #header h1 {
   font-family: 'Quicksand', sans-serif;
@@ -163,7 +168,7 @@ h2, h3 {
   h2 { color: #0D90A2;}
   h3 { color: #FFAD80;  }
 
-h1 { font-size: 40px; }
+h1 { font-size: 3rem; }
 
 /* =============================================================================
 Embedded content
