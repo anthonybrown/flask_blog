@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400);
 
 /* =============================================================================
-Selections
+  Selections
 ========================================================================== */
 
 ::-moz-selection {
@@ -17,7 +17,7 @@ Selections
 }
 
 /* =============================================================================
-Typography
+  Typography
 ========================================================================== */
 
 pre,code,kbd,samp {
@@ -61,7 +61,7 @@ sub {
 }
 
 /* =============================================================================
-HTML5 element display
+  HTML5 element display
 ========================================================================== */
 
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
@@ -75,7 +75,7 @@ audio[controls],canvas,video {
 }
 
 /* =============================================================================
-Links
+  Links
 ========================================================================== */
 
 a:hover,a:active {
@@ -97,7 +97,7 @@ a:link,a:visited,a:hover,a:active,:link,:visited,:hover,:active {
 }
 
 /* =============================================================================
-Base
+  Base
 ========================================================================== */
 
 html {
@@ -136,27 +136,18 @@ body {
 }
 
 /* =============================================================================
-Globals
+  Globals
 ========================================================================== */
 #container {
   margin: 50px auto 10px auto;
 }
 
-<<<<<<< HEAD
-=======
-#header h3#date {
-  color: #FFF;
-  text-shadow: -2px -1px 1px #FFAD80, 2px -1px 2px #FFAD80, 1px 2px 2px #FFAD80, -2px 2px 1px #FFAD80;
-}
->>>>>>> 3d9bd509c9cb575150ba4274defdd246722b3223
-
-
 #header h3#date {
   color: #FFF;
   text-shadow: -2px -1px 1px #FFAD80, 2px -1px 2px #FFAD80, 1px 2px 2px #FFAD80, -2px 2px 1px #FFAD80;
 }
 
-#header > h1 {
+#header h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   color: #3787A8;
@@ -178,12 +169,9 @@ h2, h3 {
   h3 { color: #FFAD80;  }
 
 h1 { font-size: 3rem; }
-<<<<<<< HEAD
-=======
 
->>>>>>> 3d9bd509c9cb575150ba4274defdd246722b3223
 /* =============================================================================
-Embedded content
+  Embedded content
 ========================================================================== */
 /*
  * Improve image quality when scaled in IE7
@@ -200,3 +188,112 @@ img {
 svg:not(:root) {
 	overflow: hidden;
 }
+#container {
+    width: 450px;
+}
+
+h3#date {
+    font-family: Verdana, sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
+    color: #999999;
+    font-size: 0.7em;
+}
+
+/* =============================================================================
+  Post styles
+========================================================================== */
+
+#content {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2em;
+    font-size: 1em;
+    text-align: left;
+}
+  #content > h1 {
+    color: #BBB;
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+#content p {
+    margin-top: 0.5em;
+    line-height: 1.5em;
+}
+  #content img {
+    max-width: 100%;
+  }
+
+.post {
+  width: 50%;
+  min-width: 420px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+/* =============================================================================
+  Syntax styles
+========================================================================== */
+
+.hll { background-color: #ffffcc }
+.c { color: #aaaaaa; font-style: italic } /* Comment */
+.err { color: #FF0000; background-color: #FFAAAA } /* Error */
+.k { color: #0000aa } /* Keyword */
+.cm { color: #aaaaaa; font-style: italic } /* Comment.Multiline */
+.cp { color: #4c8317 } /* Comment.Preproc */
+.c1 { color: #aaaaaa; font-style: italic } /* Comment.Single */
+.cs { color: #0000aa; font-style: italic } /* Comment.Special */
+.gd { color: #aa0000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #aa0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00aa00 } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #555555 } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #aa0000 } /* Generic.Traceback */
+.kc { color: #0000aa } /* Keyword.Constant */
+.kd { color: #0000aa } /* Keyword.Declaration */
+.kn { color: #0000aa } /* Keyword.Namespace */
+.kp { color: #0000aa } /* Keyword.Pseudo */
+.kr { color: #0000aa } /* Keyword.Reserved */
+.kt { color: #00aaaa } /* Keyword.Type */
+.m { color: #009999 } /* Literal.Number */
+.s { color: #aa5500 } /* Literal.String */
+.na { color: #1e90ff } /* Name.Attribute */
+.nb { color: #00aaaa } /* Name.Builtin */
+.nc { color: #00aa00; text-decoration: underline } /* Name.Class */
+.no { color: #aa0000 } /* Name.Constant */
+.nd { color: #888888 } /* Name.Decorator */
+.ni { color: #880000; font-weight: bold } /* Name.Entity */
+.nf { color: #00aa00 } /* Name.Function */
+.nn { color: #00aaaa; text-decoration: underline } /* Name.Namespace */
+.nt { color: #1e90ff; font-weight: bold } /* Name.Tag */
+.nv { color: #aa0000 } /* Name.Variable */
+.ow { color: #0000aa } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #009999 } /* Literal.Number.Float */
+.mh { color: #009999 } /* Literal.Number.Hex */
+.mi { color: #009999 } /* Literal.Number.Integer */
+.mo { color: #009999 } /* Literal.Number.Oct */
+.sb { color: #aa5500 } /* Literal.String.Backtick */
+.sc { color: #aa5500 } /* Literal.String.Char */
+.sd { color: #aa5500 } /* Literal.String.Doc */
+.s2 { color: #aa5500 } /* Literal.String.Double */
+.se { color: #aa5500 } /* Literal.String.Escape */
+.sh { color: #aa5500 } /* Literal.String.Heredoc */
+.si { color: #aa5500 } /* Literal.String.Interpol */
+.sx { color: #aa5500 } /* Literal.String.Other */
+.sr { color: #009999 } /* Literal.String.Regex */
+.s1 { color: #aa5500 } /* Literal.String.Single */
+.ss { color: #0000aa } /* Literal.String.Symbol */
+.bp { color: #00aaaa } /* Name.Builtin.Pseudo */
+.vc { color: #aa0000 } /* Name.Variable.Class */
+.vg { color: #aa0000 } /* Name.Variable.Global */
+.vi { color: #aa0000 } /* Name.Variable.Instance */
+.il { color: #009999 } /* Literal.Number.Integer.Long */
