@@ -135,24 +135,27 @@ body {
 
 }
 
-header {
-  background-color: #2B2B2B;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #20A4FC;
   height:5.3em;
-  line-height: 3;
   width: 100%;
   opacity: 0.9;
   margin-bottom: 10px;
 }
-  header h1.logo {
+  header h1.logo a {
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     margin: 0;
-    font-size: 1.5rem;
-    color: #3787A8;
+    font-size: 1.3rem;
+    color: #fff;
     text-transform: uppercase;
     float: left;
+    letter-spacing: -1px;
   }
-    header h1.logo:hover {
+    header h1.logo a:hover {
       color: #fff;
       text-decoration: none;
       text-shadow: -1px -1px 7px #fff, 2px 2px 9px #fff;
@@ -163,6 +166,7 @@ header {
       margin: 0 auto;
     }
       div.jumbo {
+        margin-top: 10em;
         padding: 10px 0 30px 0;
         background-color: #eee;
         -webkit-border-radius: 7px;

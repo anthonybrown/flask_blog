@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7.3
+#!/usr/bin/python2.7.6
 
 import os
 import sys
@@ -13,10 +13,7 @@ import yaml
 
 POSTS_FILE_EXTENSION = '.md'
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 3d9bd509c9cb575150ba4274defdd246722b3223
 class SortedDict(collections.MutableMapping):
     def __init__(self, items=None, key=None, reverse=False):
         self._items = {}
@@ -132,16 +129,12 @@ def format_date(value, format='%B %d, %Y'):
 def index():
     return render_template('index.html', posts=blog.posts)
 
-<<<<<<< HEAD
 @app.route('/home')
 def home():
     """docstring for home"""
     return render_template('home.html')
 
-@app.route('/blog/<path:path>')
-=======
 @app.route('/blog/<path:path>/')
->>>>>>> 3d9bd509c9cb575150ba4274defdd246722b3223
 def post(path):
     #import ipdb; ipdb.set_trace()
     post = blog.get_post_or_404(path)

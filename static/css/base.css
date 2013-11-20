@@ -142,13 +142,14 @@ Globals
   margin: 50px auto 10px auto;
 }
 
-<<<<<<< HEAD
-=======
+#header {
+  margin-top: 10em;
+}
+
 #header h3#date {
   color: #FFF;
   text-shadow: -2px -1px 1px #FFAD80, 2px -1px 2px #FFAD80, 1px 2px 2px #FFAD80, -2px 2px 1px #FFAD80;
 }
->>>>>>> 3d9bd509c9cb575150ba4274defdd246722b3223
 
 
 #header h3#date {
@@ -178,10 +179,6 @@ h2, h3 {
   h3 { color: #FFAD80;  }
 
 h1 { font-size: 3rem; }
-<<<<<<< HEAD
-=======
-
->>>>>>> 3d9bd509c9cb575150ba4274defdd246722b3223
 /* =============================================================================
 Embedded content
 ========================================================================== */
