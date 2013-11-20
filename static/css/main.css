@@ -127,7 +127,7 @@ body {
     height: 100%;
     min-height: 100%;
     margin: 0;
-    padding: 50px;
+    padding: 0;
     text-align: center;
     letter-spacing: 0.1em;
     font-family:'Ubuntu', Helvetica, Arial, sans-serif;
@@ -135,55 +135,56 @@ body {
 
 }
 
-/* =============================================================================
-Globals
-========================================================================== */
-#container { margin: 50px auto 10px auto; }
+header {
+  background-color: #2B2B2B;
+  height:5.3em;
+  line-height: 3;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+  header h1.logo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.5rem;
+    color: #3787A8;
+    text-transform: uppercase;
+    float: left;
+  }
+    header h1.logo:hover {
+      color: #fff;
+      text-decoration: none;
+      text-shadow: -1px -1px 7px #fff, 2px 2px 9px #fff;
+    }
 
-
-
-#header h3#date {
-  color: #FFF;
-  text-shadow: -2px -1px 1px #FFAD80, 2px -1px 2px #FFAD80, 1px 2px 2px #FFAD80, -2px 2px 1px #FFAD80;
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+      div.jumbo {
+        padding: 10px 0 30px 0;
+        background-color: #eee;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -o-border-radius: 7px;
+        border-radius: 7px;
+      }
+h2 {
+  font-size: 2.7rem;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
 }
 
-#header > h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-  color: #3787A8;
-  /*color: #20A4FC;*/
-  text-shadow: -1px -1px 0 #fff;
+h3 {
+  font-size: 1.7rem;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
 }
 
-h1 {
-    font-family:'Quicksand', sans-serif;
-    font-weight: 300;
-    letter-spacing: -0.075em;
-}
 
-h2, h3 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
-}
-  h2 { color: #0D90A2;}
-  h3 { color: #FFAD80;  }
 
-h1 { font-size: 3rem; }
-/* =============================================================================
-Embedded content
-========================================================================== */
-/*
- * Improve image quality when scaled in IE7
- * code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
- */
-img {
-	border: 0;
-	-ms-interpolation-mode: bicubic;
-}
-
-/*
- * Correct overflow displayed oddly in IE9
- */
-svg:not(:root) {
-	overflow: hidden;
-}

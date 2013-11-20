@@ -11,9 +11,6 @@ import yaml
 
 POSTS_FILE_EXTENSION = '.md'
 
-#ext = ['.md', '.html', '.js']
-
-
 class SortedDict(collections.MutableMapping):
     def __init__(self, items=None, key=None, reverse=False):
         self._items = {}
@@ -122,6 +119,11 @@ def format_date(value, format='%B %d, %Y'):
 @app.route('/')
 def index():
     return render_template('index.html', posts=blog.posts)
+
+@app.route('/home')
+def home():
+    """docstring for home"""
+    return render_template('home.html')
 
 @app.route('/blog/<path:path>')
 def post(path):

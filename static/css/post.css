@@ -2,6 +2,10 @@
     width: 450px;
 }
 
+#posts {
+  margin-top:5em;
+}
+
 h3#date {
     font-family: Verdana, sans-serif;
     margin-bottom: 0;
@@ -21,6 +25,8 @@ h3#date {
 }
   #content > h1 {
     color: #BBB;
+    font-size: 2.7rem;
+    text-align: center;
   }
 
 #content p {

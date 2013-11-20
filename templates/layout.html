@@ -1,7 +1,6 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  {% block head %}
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name='description' content='Flask Blogging application' />
     <meta name='author' content='Tony Brown' />
@@ -9,29 +8,20 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta name='viewport' content='width=device-width'>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/post.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/syntax.css') }}">
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <!-- Atom Feed -->
-    <link href="{{ url_for('feed') }}"
-      rel="alternate"
-      title="Recent Changes"
-      type="application/atom+xml">
-
-  {% endblock head %}
 </head>
 <body>
- <header class="header">
+  <header class="header">
     <div class="container">
       <h1 class="logo"><a href='/home'>Tony Brown Development</a></h1>
     </div>
   </header>
-  {% block content %}
 
-  {% endblock content %}
+  <div class='container'>
+    {% block content %}
+
+    {% endblock content %}
+  </div>
   <script src='../static/js/jquery.js'></script>
 </body>
 </html>
