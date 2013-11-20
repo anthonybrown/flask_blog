@@ -140,6 +140,10 @@ def post(path):
     post = blog.get_post_or_404(path)
     return render_template('post.html', post=post)
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/feed.atom')
 def feed():
     """setting up an Atom Feed"""
@@ -165,4 +169,3 @@ if __name__ == '__main__':
     else:
         post_files = [post.filepath for post in blog.posts]
         app.run(port=8000, debug=True, extra_files=post_files)
-

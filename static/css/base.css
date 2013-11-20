@@ -206,10 +206,18 @@ h1 { font-size: 3rem; }
       text-shadow: -1px -1px 7px #fff, 2px 2px 9px #fff;
     }
 
+p {
+  text-align: left;
+}
+
+.grid_12 { width: 100%;  }
     .container {
       width: 80%;
       margin: 0 auto;
     }
+      .container > p {
+        text-align: left;
+      }
       div.jumbo {
         margin-top: 10em;
         padding: 10px 0 30px 0;
@@ -219,6 +227,7 @@ h1 { font-size: 3rem; }
         -o-border-radius: 7px;
         border-radius: 7px;
       }
+        div.jumbo > p { text-align: left; }
 h2 {
   font-size: 2.7rem;
   margin-top: 40px;
@@ -235,8 +244,30 @@ h3 {
   color: #999;
 }
 /*=========================================================================
+ Navigation Styles 
+ =========================================================================*/
+
+.menu {
+  float: right;
+  margin-top: 10px;
+}
+  .menu li {
+    display: inline;
+  }
+    .menu li + li {
+      margin-left: 35px;
+    }
+      .menu li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+
+
+/*=========================================================================
   index.css my blog page
  =========================================================================*/
+
 #posts { line-height: 1.5em; }
 
 #posts a {
