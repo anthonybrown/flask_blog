@@ -126,13 +126,13 @@ def format_date(value, format='%B %d, %Y'):
 
 
 @app.route('/')
-def index():
-    return render_template('index.html', posts=blog.posts)
-
-@app.route('/home')
 def home():
     """docstring for home"""
     return render_template('home.html')
+
+@app.route('/blog')
+def index():
+    return render_template('index.html', posts=blog.posts)
 
 @app.route('/blog/<path:path>/')
 def post(path):
