@@ -185,7 +185,8 @@ h1 { font-size: 3rem; }
   top: 0;
   left: 0;
   background-color: #20A4FC;
-  height:5.3em;
+  min-height:5.3em;
+  height: auto;
   width: 100%;
   opacity: 0.9;
   margin-bottom: 10px;
