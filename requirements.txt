@@ -11,7 +11,7 @@ Powerline==beta
 PyYAML==3.10
 South==0.7.6
 WTForms==1.0.4
-Werkzeug==0.9.4
+Werkzeug==0.9
 bleach==1.2.1
 boto==2.16.0
 filebrowser-safe==0.2.16
