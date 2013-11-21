@@ -28,9 +28,9 @@
       <h1 class="logo"><a href='/'>Tony Brown Development</a></h1>
       <nav>
         <ul class='menu'>
-          <li><a href="{{ url_for('home') }}">home</a></li>
-          <li><a href="{{ url_for('about') }}">about</a></li>
-          <li><a href="{{ url_for('index') }}">blog</a></li>
+          <li><a href="{{ url_for('home') }}"><span data-title="home">home</span></a></li>
+          <li><a href="{{ url_for('about') }}"><span data-title="about">about</span></a></li>
+          <li><a href="{{ url_for('index') }}"><span data-title="blog">blog</span></a></li>
         </ul>
       </nav>
     </div>
@@ -45,7 +45,7 @@
   ;(function($, document, window, undefined) {
      'use strict';
      $(function($) {
-       $('body').css('display', 'none').fadeIn(900)
+       $('body').css('display', 'none').fadeIn(1300)
       })
   }(jQuery, document, window))
   </script>
