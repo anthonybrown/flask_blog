@@ -74,6 +74,10 @@ audio[controls],canvas,video {
 	*zoom: 1;
 }
 
+body.hide {
+  opacity: 0;
+}
+
 /* =============================================================================
 Links
 ========================================================================== */
@@ -89,11 +93,11 @@ a,a:active,a:visited {
 
 
 a:link,a:visited,a:hover,a:active,:link,:visited,:hover,:active {
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+	-webkit-transition : all .5s ease-in-out;
+	-moz-transition    : all .5s ease-in-out;
+	-o-transition      : all .5s ease-in-out;
+	-ms-transition     : all .5s ease-in-out;
+	transition         : all .5s ease-in-out;
 }
 
 /* =============================================================================
@@ -132,7 +136,7 @@ body {
     letter-spacing: 0.1em;
     font-family:'Ubuntu', Helvetica, Arial, sans-serif;
     color: #777;
-
+    line-height: 1.5;
 }
 
 /* =============================================================================
@@ -245,7 +249,7 @@ h3 {
   color: #999;
 }
 /*=========================================================================
- Navigation Styles 
+ Navigation Styles
  =========================================================================*/
 
 .menu {
