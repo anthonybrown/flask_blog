@@ -12,15 +12,16 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
 
+    <script src='/static/js/jquery.js'></script>
+
     <!-- Atom Feed -->
 
     <link href="{{ url_for('feed') }}"
       rel="alternate"
       title="Recent Changes"
       type="application/atom+xml">
-
-  <script src='/static/js/jquery.js'></script>
 {% endblock head %}
+
 </head>
 <body>
   <header class="header">

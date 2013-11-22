@@ -1,5 +1,26 @@
 {% extends "layout.html" %}
 
+{% block head  %}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name='description' content='Flask Blogging application' />
+    <meta name='author' content='Tony Brown' />
+    <title>Flask Blogging</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width'>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
+    <script src='/static/js/jquery.js'></script>
+
+    <!-- Atom Feed -->
+
+    <link href="{{ url_for('feed') }}"
+      rel="alternate"
+      title="Recent Changes"
+      type="application/atom+xml">
+
+{% endblock head %}
+
 {% block content %}
   <div class="jumbo">
     <h2>This is my first Flask Application.</h2>
@@ -19,7 +40,7 @@
 
     <p>
       This project was designed in the browser.It started after a phone interview I had with a company
-      looking for a frontend developer. Flask was mentioned and it sounded interesting to me so I did 
+      looking for a frontend developer. Flask was mentioned and it sounded interesting to me so I did
       some research on it.
       </p>
     <p>
