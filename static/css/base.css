@@ -222,21 +222,28 @@ p {
       width: 80%;
       margin: 0 auto;
     }
+      .grid_12 > p {
+        text-shadow: -1px -1px 0 #fff;
+        padding: 0 0 1em 0;
+      }
       .container > p {
         text-align: left;
       }
       div.jumbo {
         margin-top: 10em;
         padding: 10px 0 30px 0;
-        background-color: #E7E4E4;
-        border: 1px solid #CACACA;
-        box-shadow: inset 0 0 1em 0.3em #D8D8D8;
+        background-color: #FFFAFA;
+        border: 1px solid #ECECEC;
+        box-shadow: inset 0 0 1em 0.3em #F5F2F2;
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         -o-border-radius: 7px;
         border-radius: 7px;
       }
-        div.jumbo > p { text-align: left; }
+        div.jumbo > p {
+          text-align: left;
+        }
+
 h2 {
   font-size: 2.7rem;
   margin-top: 40px;
