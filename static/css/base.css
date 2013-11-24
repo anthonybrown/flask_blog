@@ -507,13 +507,10 @@ h3#date {
     display: -moz-inline-stack;display: inline-block;vertical-align: top;zoom: 1;*display: inline;
   }
   .sm a {
-    background: url(http://webbb.be/themes/webbb/../webbb/images/sm3d.png) no-repeat #2e8198;height: 27px; width: 27px;display: inline-block;
+    background: url(/static/images/sm3d.png) no-repeat #2e8198;height: 27px; width: 27px;display: inline-block;
     -webkit-transform: perspective(1000);-moz-transform: perspective(1000);-o-transform: perspective(1000);-ms-transform: perspective(1000);transform: perspective(1000);
     -webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;
     -webkit-transition: 400ms;-moz-transition: 400ms;-o-transition: 400ms;-ms-transition: 400ms;transition: 400ms;
-  }
-  .no-csstransforms3d.no-csstransitions .sm a {
-    background: url(http://webbb.be/themes/webbb/../webbb/images/sm.png) no-repeat #2e8198;
   }
   .sm a:hover {
     -webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
