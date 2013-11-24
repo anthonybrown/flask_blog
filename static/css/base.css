@@ -236,7 +236,7 @@ p {
         text-align: left;
       }
       div.jumbo {
-        margin-top: 10em;
+        margin: 5em 0;
         padding: 10px 0 30px 0;
         background-color: #FFFAFA;
         border: 1px solid #ECECEC;
