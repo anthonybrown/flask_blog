@@ -179,8 +179,14 @@ h2, h3 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
 }
-  h2 { color: #0D90A2;}
-  h3 { color: #FFAD80;  }
+  h2 {
+    color: #0D90A2;
+    text-shadow: -1px -1px 0 #094055;
+  }
+
+  h3 {
+    color: #FFAD80;
+  }
 
 h1 { font-size: 3rem; }
 
@@ -429,7 +435,9 @@ h3 {
     float: left;
     text-shadow: -2px -1px 0 #fff;
   }
-
+.jumbo h3 {
+  text-shadow: -1px -1px 0 #727272;
+}
 
 /*=========================================================================
   post.css my blog page
@@ -462,8 +470,9 @@ h3#date {
   }
 
 #content p {
-    margin-top: 0.5em;
-    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+    text-shadow: -1px -1px 0 #fff;
 }
   #content img {
     max-width: 100%;
@@ -476,6 +485,47 @@ h3#date {
   margin: 0 auto;
   text-align: right;
 }
+
+/*=============================================================================
+ Social Links
+========================================================================== */
+.sm {
+  text-align: center;
+  margin: 5em 0 0 0;
+  padding:0;
+  list-style:none;
+  -webkit-transform: perspective(1000);
+  -moz-transform: perspective(1000);
+  -ms-transform: perspective(1000);
+  -o-transform: perspective(1000);
+  transform: perspective(1000);
+ }
+
+
+  .sm li {
+    margin: 0 2px;
+    display: -moz-inline-stack;display: inline-block;vertical-align: top;zoom: 1;*display: inline;
+  }
+  .sm a {
+    background: url(http://webbb.be/themes/webbb/../webbb/images/sm3d.png) no-repeat #2e8198;height: 27px; width: 27px;display: inline-block;
+    -webkit-transform: perspective(1000);-moz-transform: perspective(1000);-o-transform: perspective(1000);-ms-transform: perspective(1000);transform: perspective(1000);
+    -webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;
+    -webkit-transition: 400ms;-moz-transition: 400ms;-o-transition: 400ms;-ms-transition: 400ms;transition: 400ms;
+  }
+  .no-csstransforms3d.no-csstransitions .sm a {
+    background: url(http://webbb.be/themes/webbb/../webbb/images/sm.png) no-repeat #2e8198;
+  }
+  .sm a:hover {
+    -webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+  }
+  .sm .twitter {}
+    .sm .twitter:hover{background-position: 0 -27px;}
+  .sm .google {background-position: -32px 0;}
+    .sm .google:hover{background-position: -32px -27px;}
+  .sm .dribble{background-position: -64px 0;}
+    .sm .dribble:hover{background-position: -64px -27px;}
+  .sm .forrst {background-position: -96px 0;}
+    .sm .forrst:hover{background-position: -96px -27px;}
 
 
 /*=============================================================================
