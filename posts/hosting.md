@@ -1,7 +1,7 @@
 title: Hosting a Flask Application
 date: 2013-11-24
 
-# Hosting a Flask Application
+# If it was easy...everyone would be doing it.
 
 Turns out I'm having a hard time hosting my flask app.
 I spun up a LAMP stack on [digital ocean](https://www.digitalocean.com/) and

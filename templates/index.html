@@ -33,7 +33,7 @@
         <div class='post'>
           <span class="post-date">{{ post.date|date }}</span>
             <a class="post-title" href="{{ post.url() }}">
-              <span data-title="{{post.title}}">{{ post.title }}{% if post.subtitle %}: {{ post.subtitle }}{% endif %}</span>
+              <span data-title="{{post.title}} {% if post.subtitle %} - {{ post.subtitle }}{% endif %}">{{ post.title }}{% if post.subtitle %} - {{ post.subtitle }}{% endif %}</span>
             </a>
         </div>
     {% endfor %}

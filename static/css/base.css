@@ -190,6 +190,10 @@ h2, h3 {
 
 h1 { font-size: 3rem; }
 
+h1.logo {
+  margin-left: 4%;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -265,6 +269,11 @@ h3 {
   letter-spacing: -1px;
   color: #999;
 }
+
+article.about {
+  width: 60%;
+}
+
 /*=========================================================================
  Navigation Styles
  =========================================================================*/
@@ -480,9 +489,9 @@ h3#date {
   }
 
 .post {
-  width: 50%;
-  min-width: 420px;
-  max-width: 500px;
+  width: 40%;
+  min-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
   text-align: right;
 }
@@ -492,7 +501,7 @@ h3#date {
 ========================================================================== */
 .sm {
   text-align: center;
-  margin: 5em 0 0 0;
+  margin: 7em 0 0 0;
   padding:0;
   list-style:none;
   -webkit-transform: perspective(1000);

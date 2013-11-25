@@ -1,4 +1,5 @@
 title: Final steps
+subtitle: A new blog
 date: 2013-11-18
 
 # Final touches to blog

@@ -36,7 +36,8 @@
         </ul>
       </nav>
     </div>
-    <a href="https://github.com/anthonybrown/flask_blog"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+      <a href="https://github.com/anthonybrown/flask_blog"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
   </header>
 
   <div class='container social'>
@@ -60,11 +61,9 @@
      $(function($) {
        $('body').css('display', 'none').fadeIn(1300)
       })
+      var today = Date.create().long()
+        , msg   = document.getElementById('date-time').innerHTML += today
   }(jQuery, document, window))
   </script>
-   <script>
-      var today = Date.create().long()
-      var msg = document.getElementById('date-time').innerHTML += today;
-    </script>
-</body>
+  </body>
 </html>
