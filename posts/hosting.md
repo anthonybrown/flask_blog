@@ -16,7 +16,7 @@ A bit overwelming for someone who, before a week ago, never touched Flask before
 
 So in the meantime, I'm going to continue making this into a static blog site and
 host it on [Github](https://github.com/) or deploy it to [Amazons S3](http://aws.amazon.com/s3/)
-until I have more time to figure out how to host on pythong apps on a VPS, seeing how I have
+until I have more time to figure out how to host a python app on a VPS, seeing how I have
 2 of them to play with :)
 
 

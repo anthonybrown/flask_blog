@@ -446,6 +446,7 @@ h3 {
     width: 450px;
 }
 
+
 h3#date {
     font-family: Verdana, sans-serif;
     margin-bottom: 0;
@@ -504,16 +505,38 @@ h3#date {
 
   .sm li {
     margin: 0 2px;
-    display: -moz-inline-stack;display: inline-block;vertical-align: top;zoom: 1;*display: inline;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    display: inline;
   }
   .sm a {
-    background: url(/static/images/sm3d.png) no-repeat #2e8198;height: 27px; width: 27px;display: inline-block;
-    -webkit-transform: perspective(1000);-moz-transform: perspective(1000);-o-transform: perspective(1000);-ms-transform: perspective(1000);transform: perspective(1000);
-    -webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;
-    -webkit-transition: 400ms;-moz-transition: 400ms;-o-transition: 400ms;-ms-transition: 400ms;transition: 400ms;
+    background: url(/static/images/sm3d.png) no-repeat #2e8198;
+    height: 27px;
+    width: 27px;
+    display: inline-block;
+    -webkit-transform: perspective(1000);
+    -moz-transform: perspective(1000);
+    -ms-transform: perspective(1000);
+    -o-transform: perspective(1000);
+    transform: perspective(1000);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
   }
   .sm a:hover {
-    -webkit-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
   .sm .twitter {}
     .sm .twitter:hover{background-position: 0 -27px;}
@@ -524,6 +547,17 @@ h3#date {
   .sm .forrst {background-position: -96px 0;}
     .sm .forrst:hover{background-position: -96px -27px;}
 
+/* =============================================================================
+  Footer Styles
+========================================================================== */
+
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin:5em 0 0;
+}
+  footer > p { text-align: center; margin-bottom: 1em; }
 
 /*=============================================================================
   syntax.css

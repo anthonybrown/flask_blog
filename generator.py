@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7.6
+#!/usr/bin/python
 
 import os
 import sys

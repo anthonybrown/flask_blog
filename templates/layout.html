@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
 
     <script src='/static/js/jquery.js'></script>
+    <script src='/static/js/sugar.js'></script>
 
     <!-- Atom Feed -->
 
@@ -35,20 +36,24 @@
         </ul>
       </nav>
     </div>
+    <a href="https://github.com/anthonybrown/flask_blog"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
   </header>
 
-  <div class='container'>
+  <div class='container social'>
      <ul class="sm">
-                   <li><a href = "https://twitter.com/pixelBender67" class             = 'twitter' target = "_blank"></a></li>
-                   <li><a href = "https://plus.google.com/105083844957177149717" class = 'google'  target = "_blank"></a></li>
-                   <li><a href = "http://dribbble.com/pixelBender67" class             = 'dribble' target = "_blank"></a></li>
-                   <li><a href = "http://forrst.com/people/pixelBender67" class        = 'forrst'  target = "_blank"></a></li>
-                </ul>
- 
+        <li><a href = "https://twitter.com/pixelBender67" class             = 'twitter' target = "_blank"></a></li>
+        <li><a href = "https://plus.google.com/+TonyBrowndesignanddevelop/"class = 'google'  target = "_blank"></a></li>
+        <li><a href = "http://dribbble.com/pixelBender67" class             = 'dribble' target = "_blank"></a></li>
+        <li><a href = "http://forrst.com/people/pixelBender67" class        = 'forrst'  target = "_blank"></a></li>
+      </ul>
+
     {% block content %}
 
     {% endblock content %}
   </div>
+  <footer>
+    <p><span id='date'></span> |&nbsp;Copyright&nbsp;&copy; Tony Brown Design | Development</p>
+  </footer>
   <script>
   ;(function($, document, window, undefined) {
      'use strict';
@@ -57,5 +62,9 @@
       })
   }(jQuery, document, window))
   </script>
+   <script>
+      var today = Date.create().long()
+      var msg = document.getElementById('date').innerHTML += today;
+    </script>
 </body>
 </html>
