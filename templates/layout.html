@@ -52,7 +52,7 @@
     {% endblock content %}
   </div>
   <footer>
-    <p><span id='date'></span> |&nbsp;Copyright&nbsp;&copy; Tony Brown Design | Development</p>
+    <p><span id='date-time'></span> |&nbsp;Copyright&nbsp;&copy; Tony Brown Design | Development</p>
   </footer>
   <script>
   ;(function($, document, window, undefined) {
@@ -64,7 +64,7 @@
   </script>
    <script>
       var today = Date.create().long()
-      var msg = document.getElementById('date').innerHTML += today;
+      var msg = document.getElementById('date-time').innerHTML += today;
     </script>
 </body>
 </html>
