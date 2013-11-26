@@ -4,6 +4,8 @@ date: 2013-11-18
 
 # Final touches to blog
 
+###_Learning Flask_
+
 Well, I've managed to hobble together a blog
 built with Flask despite having the flu.
 
@@ -26,3 +28,4 @@ I venture to repeat the question.</p><p>"The man of Barsoom," she fin
 ally ventured, "does not ask personal questions of women, except his mother, and the woman he has fought for and won."</p><p>"But I have fought&mdash;"
 
  I started, and then I wished my tongue had been cut from my mouth; for she turned even as I caught myself and ceased, and drawing my silks from her shoulder she held them out to me, and without a word, and with head held high, she moved with the carriage of the queen she was toward the plaza and the doorway of her quarters.</p>
+

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-{% block head  %}
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name='description' content='Flask Blogging application' />
     <meta name='author' content='Tony Brown' />
-    <title>Flask Blogging</title>
+
+    <title>Blogging with Flask</title>
+
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta name='viewport' content='width=device-width'>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="/static/css/base.css">
 
     <script src='/static/js/jquery.js'></script>
     <script src='/static/js/sugar.js'></script>
 
     <!-- Atom Feed -->
 
-    <link href="{{ url_for('feed') }}"
+    <link href="/feed.atom"
       rel="alternate"
       title="Recent Changes"
       type="application/atom+xml">
 
-{% endblock head %}
+
 
 </head>
 <body>
@@ -31,9 +32,9 @@
       <h1 class="logo"><a href='/'>Tony Brown Development</a></h1>
       <nav>
         <ul class='menu'>
-          <li><a href="{{ url_for('home') }}"><span data-title="home">home</span></a></li>
-          <li><a href="{{ url_for('about') }}"><span data-title="about">about</span></a></li>
-          <li><a href="{{ url_for('index') }}"><span data-title="blog">blog</span></a></li>
+          <li><a href="/"><span data-title="home">home</span></a></li>
+          <li><a href="/about"><span data-title="about">about</span></a></li>
+          <li><a href="/blog"><span data-title="blog">blog</span></a></li>
         </ul>
       </nav>
     </div>
@@ -49,9 +50,16 @@
         <li><a href = "http://forrst.com/people/pixelBender67" class        = 'forrst'  target = "_blank"></a></li>
       </ul>
 
-    {% block content %}
+    
 
-    {% endblock content %}
+  <div id='header'>
+    <h1>My Flask blog</h1>
+  </div>
+
+  <div id='posts'>
+    
+  </div>
+
   </div>
   <footer>
     <p><span id='date-time'></span> |&nbsp;Copyright&nbsp;&copy; Tony Brown Design | Development</p>

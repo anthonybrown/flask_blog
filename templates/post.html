@@ -1,25 +1,23 @@
 {% extends "layout.html" %}
 
 {% block head  %}
-
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-      <title>{{ post.title }}{% if post.subtitle %}: {{ post.subtitle }}{% endif %}</title>
     <meta name='description' content='Flask Blogging application' />
     <meta name='author' content='Tony Brown' />
+    <title>{{ post.title }}{% if post.subtitle %}: {{ post.subtitle }}{% endif %}</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <meta name='viewport' content='width=device-width'>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
-
+    <script src='/static/js/jquery.js'></script>
+    <script src='/static/js/sugar.js'></script>
     <!-- Atom Feed -->
 
     <link href="{{ url_for('feed') }}"
       rel="alternate"
       title="Recent Changes"
       type="application/atom+xml">
-
-    <script src='/static/js/jquery.js'></script>
-    <script src='/static/js/sugar.js'></script>
 
 {% endblock head %}
 

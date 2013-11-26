@@ -3,6 +3,8 @@ date: 2013-11-17
 
 # Bad time to have the flu
 
+_Like there ever is a good time?_
+
 There is never a good time to get sick with the flu,
 working on my flask blog to show to a potential employer
 while having the flu is really really bad.
@@ -18,3 +20,4 @@ So it's just one task at a time, works for me.
 Python rocks, and Flask in a joy to work with!
 
 Carry on...
+
