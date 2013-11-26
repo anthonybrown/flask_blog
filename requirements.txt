@@ -1,0 +1,6 @@
+Flask==0.9
+Frozen-Flask==0.10
+Markdown==2.3.1
+PyYAML==3.10
+Pygments==1.6
+boto==2.8.0
