@@ -14,7 +14,6 @@ Werkzeug==0.9.4
 bleach==1.2.1
 boto==2.16.0
 filebrowser-safe==0.2.16
-git-remote-helpers==0.1.0
 grappelli-safe==0.2.12
 gunicorn==18.0
 html5lib==0.95
