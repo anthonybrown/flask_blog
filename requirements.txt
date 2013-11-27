@@ -25,6 +25,5 @@ pynuodb==0.1
 pytz==2012j
 readline==6.2.4.1
 vboxapi==1.0
-virtualenv==1.10.1
 wsgiref==0.1.2
 yolk==0.4.3
