@@ -27,6 +27,10 @@
 </head>
 <body>
   <header class="header">
+    <div class="back-to-top" id="back-top">
+      <a href="javascript:void(0)" class="back-to-top">Top</a>
+    </div>
+
     <div class="container">
       <h1 class="logo"><a href='/'>Tony Brown Development</a></h1>
       <nav>
@@ -57,14 +61,30 @@
     <p><span id='date-time'></span> |&nbsp;Copyright&nbsp;&copy; Tony Brown Design | Development</p>
   </footer>
   <script>
-  ;(function($, document, window, undefined) {
-     'use strict';
-     $(function($) {
-       $('body').css('display', 'none').fadeIn(1300)
-      })
-      var today = Date.create().long()
-        , msg   = document.getElementById('date-time').innerHTML += today
-  }(jQuery, document, window))
+    ;(function($, document, window, undefined) {
+      'use strict';
+      $(function($) {
+        $('body').css('display', 'none').fadeIn(1300)
+        })
+        var today = Date.create().long()
+          , msg   = document.getElementById('date-time').innerHTML += today
+
+
+        $("#back-top").hide()
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 150) {
+                $('#back-top').fadeIn()
+            } else {
+                $('#back-top').fadeOut()
+            }
+        })
+
+        jQuery('.back-to-top').click(function () {
+            jQuery('html, body').animate({
+                scrollTop: 0
+            }, 900)
+        })
+    }(jQuery, document, window))
   </script>
   </body>
 </html>

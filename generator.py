@@ -11,7 +11,7 @@ import yaml
 
 
 POSTS_FILE_EXTENSION = '.md'
-
+FREEZER_IGNORE_MIMETYPE_WARNINGS = 'true'
 
 class SortedDict(collections.MutableMapping):
     def __init__(self, items=None, key=None, reverse=False):

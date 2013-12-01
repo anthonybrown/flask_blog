@@ -568,6 +568,27 @@ footer {
 }
   footer > p { text-align: center; margin-bottom: 1em; }
 
+.back-to-top {
+position: fixed;
+bottom: 25px;
+right: 25px;
+/*link to your image, use correct path, if in doubt, use full path with http://...*/
+background: url('../images/arrows.png') left top no-repeat; 
+width: 25px;
+height: 23px;
+}
+
+.back-to-top a {
+text-indent: -9999px;
+display: block;
+}
+
+.back-to-top:hover {
+/*link to your image, use correct path, if in doubt, use full path with http://...*/
+background:url('../images/arrows.png') left -23px no-repeat; 
+}
+
+
 /*=============================================================================
   syntax.css
 ========================================================================== */
