@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+
+{% block head  %}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name='description' content='Flask Blogging application' />
+    <meta name='author' content='Tony Brown' />
+    <title>About Tony Brown</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width'>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
+    <script src='/static/js/jquery.js'></script>
+    <script src='/static/js/sugar.js'></script>
+    <!-- Atom Feed -->
+
+    <link href="{{ url_for('feed') }}"
+      rel="alternate"
+      title="Recent Changes"
+      type="application/atom+xml">
+
+{% endblock head %}
+
+{% block content  %}
+
+  <div class="grid_12">
+    <div class='jumbo'>
+      <h2>A little bit about myself.</h2>
+      <h3>and what I do</h3>
+    </div>
+    <article class='about'>
+      <p>
+        I am a web developer with a passion for cutting edge technologies, uber user interactions and clean
+        intuitive interfaces.
+      </p>
+      <p>
+        For the past 5 years I've been learning various languages and skills, all related
+        to the web. I went back to school for web design and interactive media. I was totally into
+        flash at the time and learned AS3, plus that was the programming language taught at the collage
+        I went to.
+      </p>
+      <p>
+        After the first couple of years learning everything from design to development.
+        I figured out pretty quickly what I had to do to achieve my goals of becoming a web
+        master! I first learned how to design the sites, using tools like Photoshop and Illustrator
+        then I learned how to code them up with standards HTML and CSS with a little JavaScript for
+        client side validation and UI control.
+      </p>
+      <p>
+        Then we learned how to analyze the user experience, card sorting, persona's, usability
+        testing Information architecture. I read books like `Don't make me think` by Steve Krug
+        and I loved every minute of it. School showed me all the tools I needed to succeed in
+        whatever direction I wanted to go in, <em>Information Architecture, Usability, Design,
+        Development</em> it's up to the individual to take it the next level.
+      </p>
+      <p>
+        After I left school, I taught myself how to work with databases with PHP and MySQL,
+        It was very exciting, and I all I wanted to do was learn more about web development,
+        and couldn't get enough. Once I found out about NodeJS on the server, MongoDB
+        on the database and Backbone on the frontend, I was hooked.
+      </p>
+      <p>
+        I have had a chance to intern at a great company in Boston called
+        <a href='http://www.inphantry.com/' target='_blank'>Inphantry</a>. I learned alot about how to
+        work under short deadlines and high pressure. I worked on some major
+        brands there. I've done some freelance work as well, some of it under
+        a NDA agreement. I worked on `So you think you can dance` project. I
+        worked with teams from all over the world and delt with huge files.
+        LESS was used to handle the css and Symphony PHP framework using twig
+        templates. It was an amazing experience.
+      </p>
+      <p>
+        I'm currently looking to join a team and take my career to the next level.
+        Until then, I'll just keep learning and growing as a developer and a human being.
+      </p>
+
+    </article>
+  </div>
+{% endblock content %}
+

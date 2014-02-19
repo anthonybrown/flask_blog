@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block head  %}
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name='description' content='Flask Blogging application' />
+    <meta name='author' content='Tony Brown' />
+    <title>Flask Blogging</title>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width'>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+
+    <script src='/static/js/jquery.js'></script>
+    <script src='/static/js/sugar.js'></script>
+
+    <!-- Atom Feed -->
+
+    <link href="{{ url_for('feed') }}"
+      rel="alternate"
+      title="Recent Changes"
+      type="application/atom+xml">
+
+{% endblock head %}
+
+</head>
+<body>
+  <header class="header">
+    <div class="back-to-top" id="back-top">
+      <a href="javascript:void(0)" class="back-to-top">Top</a>
+    </div>
+
+    <div class="container">
+      <h1 class="logo"><a href='/'>Tony Brown Development</a></h1>
+      <nav>
+        <ul class='menu'>
+          <li><a href="{{ url_for('home') }}"><span data-title="home">home</span></a></li>
+          <li><a href="{{ url_for('about') }}"><span data-title="about">about</span></a></li>
+          <li><a href="{{ url_for('index') }}"><span data-title="blog">blog</span></a></li>
+        </ul>
+      </nav>
+    </div>
+      <a href="https://github.com/anthonybrown/flask_blog"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
+  </header>
+
+  <div class='container social'>
+     <ul class="sm">
+        <li><a href = "https://twitter.com/pixelBender67" class             = 'twitter' target = "_blank"></a></li>
+        <li><a href = "https://plus.google.com/+TonyBrowndesignanddevelop/"class = 'google'  target = "_blank"></a></li>
+        <li><a href = "http://dribbble.com/pixelBender67" class             = 'dribble' target = "_blank"></a></li>
+        <li><a href = "http://forrst.com/people/pixelBender67" class        = 'forrst'  target = "_blank"></a></li>
+      </ul>
+
+    {% block content %}
+
+    {% endblock content %}
+  </div>
+  <footer>
+    <p><span id='date-time'></span> |&nbsp;Copyright&nbsp;&copy; Tony Brown Design | Development</p>
+  </footer>
+  <script>
+    ;(function($, document, window, undefined) {
+      'use strict';
+      $(function($) {
+        $('body').css('display', 'none').fadeIn(1300)
+        })
+        var today = Date.create().long()
+          , msg   = document.getElementById('date-time').innerHTML += today
+
+
+        $("#back-top").hide()
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 150) {
+                $('#back-top').fadeIn()
+            } else {
+                $('#back-top').fadeOut()
+            }
+        })
+
+        jQuery('.back-to-top').click(function () {
+            jQuery('html, body').animate({
+                scrollTop: 0
+            }, 900)
+        })
+    }(jQuery, document, window))
+  </script>
+  </body>
+</html>
